@@ -1,0 +1,74 @@
+4/27, ,08h00 - 09h30,S2_GH,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°14,TD
+4/27, ,08h00 - 11h00,S2_E,Automatisme,NEANNE Nicolas,E212 - E212, ,N°3,TP
+4/27, ,08h00 - 11h00,S2_C,Informatique embarquée,KRAMMER Michel,E214 - E214, ,N°8,TP
+4/27, ,09h00 - 11h00,S2_F,Outils logiciels,BOIZOT Nicolas,E200 - E200, ,N°2,TP
+4/27, ,09h00 - 12h00,S2_A,E&R d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°11,TP
+4/27, ,09h30 - 11h00,S2_GH,Automatisme,PIGNOL Stephane,E007 - E007, ,N°8,TD
+4/27, ,09h30 - 11h00,S2_B,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°1,TP
+4/27, ,11h00 - 12h30,S2_CD,Automatisme,PIGNOL Stephane,E007 - E007, ,N°9,TD
+4/27, ,11h00 - 12h30,S2_EF,Mathématiques,LE BEUX Sylvia,E201 - E201, ,N°14,TD
+4/27, ,11h00 - 12h30,S2_GH,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°3,TD
+4/27, ,13h30 - 15h00,S2_E,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°5,TP
+4/27, ,13h30 - 15h30,S2_A,Outils logiciels,BOIZOT Nicolas,E200 - E200, ,N°2,TP
+4/27, ,13h30 - 15h30,S2_B,Systèmes électroniques,PIOCH Sebastien,E102 - E102, ,N°5,TP
+4/27, ,13h30 - 16h30,S2_CD,Anglais,WULLEMAN Isabelle,B202 - B202, ,N°15,TD
+4/27, ,13h30 - 16h30,S2_F,Automatisme,NEANNE Nicolas,E212 - E212, ,N°3,TP
+4/27, ,13h30 - 16h30,S2_H,Informatique embarquée,BRAVO Juan,E215 - E215, ,N°8,TP
+4/27, ,15h00 - 18h00,S2_E,E&R d'ens. pluritechno.,PIGNOL Stephane,E202 - E202, ,N°11,TP
+4/27, ,15h30 - 17h00,S2_A,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°7,TP
+4/27, ,16h30 - 18h30,S2_D,Systèmes électroniques,DE REGIBUS Christophe,E102 - E102, ,N°5,TP
+4/27, ,16h30 - 19h30,S2_F,E&R d'ens. pluritechno.,MARLINGE Pierre,E214 - E214, ,N°11,TP
+4/28, ,08h00 - 09h30,S2_CD,Mathématiques,LE BEUX Sylvia,E003 - E003, ,N°14,TD
+4/28, ,08h00 - 09h30,S2_GH,Outils logiciels,MERLEN Alexandre,E200 - E200, ,N°5,TD
+4/28, ,09h30 - 11h00,S2_C,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°6,TP
+4/28, ,09h30 - 12h30,S2_H,E&R d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°12,TP
+4/28, ,09h30 - 12h30,S2_E,Informatique embarquée,LIEBAUT Jean-francois,E215 - E215, ,N°8,TP
+4/28, ,09h30 - 12h30,S2_B,Informatique embarquée,GIBERT Sylvain,E213 - E213, ,N°8,TP
+4/28, ,09h30 - 12h30,S2_F,Informatique embarquée,KRAMMER Michel,E214 - E214, ,N°8,TP
+4/28, ,10h00 - 12h00,S2_D,Outils logiciels,BOIZOT Nicolas,E200 - E200, ,N°2,TP
+4/28, ,11h00 - 12h30,S2_G,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°6,TP
+4/28,A,13h30 - 15h00,S2_EF,Dév. compétences projet,PERO Muriel,E200 - E200, , ,TD
+4/28, ,13h30 - 15h00,S2_EF,Outils logiciels,MERLEN Alexandre,E004 - E004E200 - E200, ,N°5,TD
+4/28, ,13h30 - 15h00,S2_AB,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°3,TD
+4/28, ,13h30 - 15h30,S2_H,Outils logiciels,BOIZOT Nicolas,E104 - E104, ,N°2,TP
+4/28, ,13h30 - 16h30,S2_C,Automatisme,PIGNOL Stephane,E212 - E212, ,N°3,TP
+4/28, ,13h30 - 16h30,S2_D,E&R d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°11,TP
+4/28, ,13h30 - 16h30,S2_G,E&R d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°11,TP
+4/28,A,15h00 - 16h30,S2_AB,Dév. compétences projet,PERO Muriel,E200 - E200, , ,TD
+4/28, ,15h00 - 16h30,S2_F,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°5,TP
+4/28, ,15h00 - 16h30,S2_AB,Outils logiciels,TAY Ahmad,E007 - E007, ,N°5,TD
+4/28, ,15h30 - 17h30,S2_E,Outils logiciels,BOIZOT Nicolas,E104 - E104, ,N°2,TP
+4/28,A,16h30 - 18h00,S2_CD,Dév. compétences projet,PERO Muriel,E200 - E200, , ,TD
+4/29,A,08h00 - 09h30,S2_GH,Dév. compétences projet,PERO Muriel,E200 - E200, , ,TD
+4/29, ,08h00 - 09h30,S2_AB,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°14,TD
+4/29, ,08h00 - 11h00,S2_D,Automatisme,PIGNOL Stephane,E212 - E212, ,N°3,TP
+4/29, ,09h00 - 11h00,S2_C,Outils logiciels,BOIZOT Nicolas,E200 - E200, ,N°2,TP
+4/29, ,09h00 - 11h00,S2_E,Systèmes électroniques,PIOCH Sebastien,E102 - E102, ,N°5,TP
+4/29, ,09h30 - 11h00,S2_AB,Automatisme,NEANNE Nicolas,E007 - E007, ,N°9,TD
+4/29, ,09h30 - 11h00,S2_GH,Energie,KAROSKI Stephane,E001 - E001, ,N°10,TD
+4/29, ,09h30 - 11h00,S2_F,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°1,TP
+4/29, ,11h00 - 12h30, ,Informatique embarquée,KRAMMER Michel,E002 - E002E208 - E208, ,N°1,DS
+4/29, ,13h30 - 15h00,S2_CD,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°2,TD
+4/29, ,13h30 - 15h30,S2_F,Systèmes électroniques,DE REGIBUS Christophe,E102 - E102, ,N°5,TP
+4/29, ,13h30 - 16h30,S2_G,Automatisme,GIBERT Sylvain,E212 - E212, ,N°3,TP
+4/29, ,13h30 - 16h30,S2_B,E&R d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°11,TP
+4/29, ,13h30 - 16h30,S2_A,Informatique embarquée,PIGNOL Stephane,E202 - E202, ,N°7,TP
+4/29, ,15h00 - 16h30,S2_D,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°1,TP
+4/29, ,15h00 - 18h00,S2_C,E&R d'ens. pluritechno.,GIES Valentin,E105 - E105, ,N°11,TP
+4/29, ,15h30 - 17h30,S2_H,Systèmes électroniques,DE REGIBUS Christophe,E102 - E102, ,N°5,TP
+4/29, ,17h30 - 19h30,S2_G,Systèmes électroniques,DE REGIBUS Christophe,E102 - E102, ,N°5,TP
+4/30, ,08h00 - 09h30,S2_CD,Energie,KAROSKI Stephane,E001 - E001, ,N°10,TD
+4/30, ,08h00 - 09h30,S2_H,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°1,TP
+4/30, ,08h00 - 10h00,S2_A,Systèmes électroniques,HANSEN Franck,E102 - E102, ,N°5,TP
+4/30, ,08h00 - 11h00,S2_G,Informatique embarquée,LIEBAUT Jean-francois,E214 - E214, ,N°8,TP
+4/30, ,09h00 - 11h00,S2_B,Outils logiciels,BOIZOT Nicolas,E200 - E200, ,N°2,TP
+4/30, ,09h30 - 11h00,S2_EF,Energie,LEREDDE Alexandre,E004 - E004, ,N°10,TD
+4/30, ,09h30 - 12h30,S2_H,Automatisme,PIGNOL Stephane,E212 - E212, ,N°3,TP
+4/30, ,09h30 - 12h30,S2_D,Informatique embarquée,BRAVO Juan,E215 - E215, ,N°8,TP
+4/30, ,10h00 - 12h00,S2_C,Systèmes électroniques,HANSEN Franck,E102 - E102, ,N°5,TP
+4/30, ,11h00 - 12h30,S2_AB,Energie,LEREDDE Alexandre,E004 - E004, ,N°10,TD
+4/30, ,11h00 - 12h30,S2_EF,Projet perso. et prof.,ARRIVE Nadege,E101B - E101, ,N°3,TD
+4/30, ,11h00 - 13h00,S2_G,Outils logiciels,BOIZOT Nicolas,E200 - E200, ,N°2,TP
+4/30, ,13h30 - 15h00,S2_CD,Outils logiciels,TAY Ahmad,E104 - E104E200 - E200, ,N°5,TD
+4/30, ,13h30 - 16h30,S2_A,Automatisme,TELLAROLI Arnaud, , ,N°3,TP
+4/30, ,13h30 - 16h30,S2_B,Automatisme,NEANNE Nicolas, , ,N°3,TP

@@ -1,0 +1,78 @@
+9/23, ,08h00 - 09h30, ,Matière à préciser,ARLOTTO PhilippeKRAMMER MichelLE BEUX SylviaREYMOND Corine,E002 - E002E208 - E208, ,N°1,DS
+9/23, ,09h30 - 11h00,S1_A,Expression Communication,ARRIVE Nadege,E200 - E200, ,N°3,TP
+9/23, ,09h30 - 11h00,S1_B,Init. gestion projet,KAHN Maurice,E202 - E202, ,N°1,TP
+9/23, ,09h30 - 11h00,S1_CD,Syst. d'information num.,ABELLARD Alexandre,E003 - E003, ,N°2,TD
+9/23, ,09h30 - 11h00,S1_GH,Systèmes électroniques,KAROSKI Stephane,E004 - E004, ,N°5,TD
+9/23, ,09h30 - 12h30,S1_F,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°5,TP
+9/23, ,09h30 - 12h30,S1_E,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°5,TP
+9/23, ,11h00 - 12h30,S1_C,Expression Communication,ARRIVE Nadege,E200 - E200, ,N°3,TP
+9/23, ,11h00 - 12h30,S1_D,Init. gestion projet,KAHN Maurice,E202 - E202, ,N°1,TP
+9/23, ,11h00 - 12h30,S1_GH,Syst. d'information num.,BRAVO Juan,E201 - E201, ,N°2,TD
+9/23, ,11h00 - 12h30,S1_AB,Systèmes électroniques,KAROSKI Stephane,E001 - E001, ,N°5,TD
+9/23,A,13h30 - 15h00,S1_H,Anglais, ,B210 - B210, , ,TP
+9/23, ,13h30 - 15h00,S1_E,Expression Communication,ARRIVE Nadege,E200 - E200, ,N°3,TP
+9/23, ,13h30 - 15h00,S1_F,Init. gestion projet,KAHN Maurice,E202 - E202, ,N°1,TP
+9/23, ,13h30 - 15h00,S1_CD,Systèmes électroniques,KAROSKI Stephane,E004 - E004, ,N°5,TD
+9/23, ,13h30 - 16h30,S1_A,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°5,TP
+9/23, ,13h30 - 16h30,S1_B,Réal. d'ens. pluritechno.,LIEBAUT Jean-francois,E214 - E214, ,N°5,TP
+9/23, ,15h00 - 16h30,S1_CD,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°4,TD
+9/23, ,15h00 - 16h30,S1_H,Init. gestion projet,KAHN Maurice,E202 - E202, ,N°1,TP
+9/23, ,16h30 - 18h00,S1_D,Informatique,ABELLARD Alexandre,E213 - E213, ,N°4,TP
+9/23, ,16h30 - 18h00,S1_C,Systèmes électroniques,KAROSKI Stephane,E209 - E209, ,N°2,TP
+9/24,A,08h00 - 09h30,S1_B,Anglais, ,B210 - B210, , ,TP
+9/24, ,08h00 - 09h30,S1_EF,E&R d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/24, ,08h00 - 09h30,S1_G,Systèmes électroniques,KAROSKI Stephane,E209 - E209, ,N°2,TP
+9/24, ,08h00 - 11h00,S1_C,Informatique,GUIS Vincente,E206 - E206, ,N°4,TP
+9/24, ,08h00 - 11h00,S1_H,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°5,TP
+9/24,A,09h30 - 11h00,S1_F,Anglais, ,B210 - B210, , ,TP
+9/24, ,09h30 - 11h00,S1_G,Expression Communication,ARRIVE Nadege,E200 - E200, ,N°3,TP
+9/24, ,09h30 - 11h00,S1_E,Systèmes électroniques,KAROSKI Stephane,E209 - E209, ,N°2,TP
+9/24, ,09h30 - 11h00,S1_AB,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°4,TD
+9/24, ,11h00 - 12h30,S1_EF,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°4,TD
+9/24, ,11h00 - 12h30,S1_A,Syst. d'information num.,KRAMMER Michel,E214 - E214, ,N°1,TP
+9/24, ,11h00 - 12h30,S1_CD,Systèmes électroniques,KAROSKI Stephane,E001 - E001, ,N°6,TD
+9/24, ,11h00 - 12h30,S1_GH,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°4,TD
+9/24, ,13h30 - 15h00,S1_EF<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,LE BEUX Sylvia,E213 - E213, ,N°2,TP
+9/24, ,13h30 - 15h00,S1_AB<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,KAROSKI Stephane, , ,N°1,TP
+9/24, ,15h00 - 16h30,S1_AB<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,LE BEUX Sylvia, , ,N°2,TP
+9/24, ,15h00 - 16h30,S1_EF<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,KAROSKI Stephane,E213 - E213, ,N°1,TP
+9/25, ,08h00 - 09h30,S1_EF,Anglais,WULLEMAN Isabelle,B202 - B202, ,N°3,TD
+9/25, ,08h00 - 09h30,S1_CD,E&R d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/25, ,08h00 - 09h30,S1_H,Systèmes électroniques,MICHEL Mikael,E209 - E209, ,N°2,TP
+9/25, ,09h30 - 11h00,S1_CD,Anglais,WULLEMAN Isabelle,B202 - B202, ,N°3,TD
+9/25, ,09h30 - 11h00,S1_GH,E&R d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/25, ,09h30 - 11h00,S1_AB,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°4,TD
+9/25, ,09h30 - 12h30,S1_F,Informatique,PIGNOL Stephane,E213 - E213, ,N°5,TP
+9/25, ,09h30 - 12h30,S1_E,Informatique,ARLOTTO Philippe,E206 - E206, ,N°5,TP
+9/25, ,11h00 - 12h30,S1_AB,E&R d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/25, ,11h00 - 12h30,S1_GH,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°4,TD
+9/25, ,11h00 - 12h30,S1_CD,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°4,TD
+9/25, ,13h30 - 15h00,S1_GH,Anglais,MARKU Nelly,B202 - B202, ,N°3,TD
+9/25, ,13h30 - 16h30,S1_C,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°5,TP
+9/25, ,13h30 - 16h30,S1_D,Réal. d'ens. pluritechno.,ARLOTTO Philippe,E202 - E202, ,N°5,TP
+9/25, ,15h00 - 16h30,S1_AB,Anglais,MARKU Nelly,B202 - B202, ,N°3,TD
+9/25, ,15h00 - 16h30,S1_H,Informatique,ABELLARD Alexandre,E213 - E213, ,N°4,TP
+9/25, ,16h30 - 18h00,S1_H,Informatique,ABELLARD Alexandre,E213 - E213, ,N°5,TP
+9/25,A,16h30 - 18h00,S1_D,Systèmes électroniques,MICHEL Mikael,E209 - E209, , ,TP
+9/26, ,08h00 - 09h30,S1_EF,Systèmes électroniques,LEREDDE Alexandre,E201 - E201, ,N°5,TD
+9/26, ,08h00 - 11h00,S1_B,Informatique,GRIMALDI Michel,E206 - E206, ,N°4,TP
+9/26, ,08h00 - 11h00,S1_A,Informatique,PIGNOL Stephane,E213 - E213, ,N°4,TP
+9/26, ,09h30 - 11h00,S1_EF,Systèmes électroniques,LEREDDE Alexandre,E201 - E201, ,N°6,TD
+9/26, ,09h30 - 11h00,S1_GH,Systèmes électroniques,KAROSKI Stephane,E003 - E003, ,N°6,TD
+9/26,A,11h00 - 12h30,S1_D,Anglais, ,B205 - B205, , ,TP
+9/26, ,11h00 - 12h30,S1_GH,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°3,TD
+9/26, ,11h00 - 12h30,S1_EF,Syst. d'information num.,BRAVO Juan,E007 - E007, ,N°2,TD
+9/26, ,11h00 - 12h30,S1_AB,Systèmes électroniques,KAROSKI Stephane,E001 - E001, ,N°6,TD
+9/27, ,08h00 - 09h30, ,Syst. d'information num.,KRAMMER Michel,A051 - AMPHI OUEST, ,N°4,Cours (CM)
+9/27, ,09h30 - 11h00,S1_CD,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°4,TD
+9/27, ,09h30 - 11h00,S1_AB,Syst. d'information num.,KRAMMER Michel,E201 - E201, ,N°2,TD
+9/27, ,09h30 - 11h00,S1_EF,Thermique - Mécanique,RIPERT Marc,E004 - E004, ,N°4,TD
+9/27, ,09h30 - 12h30,S1_G,Informatique,GIBERT Sylvain,E206 - E206, ,N°4,TP
+9/27, ,11h00 - 12h30,S1_AB,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°4,TD
+9/27, ,11h00 - 12h30,S1_EF,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°4,TD
+9/27, ,13h30 - 15h00,S1_D,Informatique,ABELLARD Alexandre,E213 - E213, ,N°5,TP
+9/27, ,13h30 - 15h00,S1_A,Systèmes électroniques,DEGIOVANNI Eric,E209 - E209, ,N°2,TP
+9/27, ,13h30 - 16h30,S1_F,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°6,TP
+9/27, ,13h30 - 16h30,S1_G,Réal. d'ens. pluritechno.,LELAY Pascal,E217 - E217, ,N°5,TP
+9/27, ,15h00 - 16h30,S1_B,Systèmes électroniques,DEGIOVANNI Eric,E209 - E209, ,N°2,TP
+9/27, ,16h30 - 18h00,S1_F,Systèmes électroniques,MICHEL Mikael,E209 - E209, ,N°2,TP

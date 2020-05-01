@@ -1,0 +1,70 @@
+10/21, ,08h00 - 09h00, ,Init. gestion projet,KAHN Maurice,E002 - E002E208 - E208, ,N°1,DS
+10/21, ,09h30 - 11h00,S1_GH,Energie,KAROSKI Stephane,E001 - E001, ,N°3,TD
+10/21, ,09h30 - 11h00,S1_EF,Syst. d'information num.,BRAVO Juan,E007 - E007, ,N°6,TD
+10/21, ,09h30 - 11h00,S1_AB,Syst. d'information num.,KRAMMER Michel,E004 - E004, ,N°6,TD
+10/21, ,09h30 - 11h00,S1_CD,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°8,TD
+10/21, ,11h00 - 12h30, ,Energie,KAROSKI Stephane,A050 - AMPHI EST, ,N°3,Cours (CM)
+10/21, ,13h30 - 15h00,S1_G,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°5,TP
+10/21, ,13h30 - 15h00,S1_H,Syst. d'information num.,BRAVO Juan,E215 - E215, ,N°4,TP
+10/21, ,13h30 - 16h30,S1_F,Informatique,PIGNOL Stephane,E213 - E213, ,N°9,TP
+10/21, ,13h30 - 16h30,S1_E,Informatique,ARLOTTO Philippe,E206 - E206, ,N°9,TP
+10/21, ,13h30 - 16h30,S1_A,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°9,TP
+10/21, ,13h30 - 16h30,S1_B,Réal. d'ens. pluritechno.,LIEBAUT Jean-francois,E214 - E214, ,N°9,TP
+10/21, ,15h00 - 16h30,S1_G,Syst. d'information num.,BRAVO Juan,E215 - E215, ,N°4,TP
+10/22, ,08h00 - 09h30,S1_H,Anglais,BAVOUX Emmanuel,B202 - B202, ,N°1,TP
+10/22,A,08h00 - 09h30,S1_AB,Anglais,MARKU Nelly,B212 - B212, , ,TD
+10/22, ,08h00 - 11h00,S1_C,Informatique,GUIS Vincente,E206 - E206, ,N°8,TP
+10/22, ,08h00 - 11h00,S1_D,Informatique,ABELLARD Alexandre,E213 - E213, ,N°9,TP
+10/22, ,08h00 - 11h00,S1_F,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°9,TP
+10/22, ,08h00 - 11h00,S1_E,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°9,TP
+10/22, ,09h30 - 11h00,S1_B,Anglais,BAVOUX Emmanuel,B210 - B210, ,N°1,TP
+10/22,A,09h30 - 11h00,S1_GH,Anglais,MARKU Nelly,B202 - B202, , ,TD
+10/22, ,09h30 - 11h00,S1_A,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°5,TP
+10/22, ,11h00 - 12h30,S1_EF,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°7,TD
+10/22, ,11h00 - 12h30,S1_GH,Syst. d'information num.,BRAVO Juan,E007 - E007, ,N°6,TD
+10/22, ,11h00 - 12h30,S1_CD,Syst. d'information num.,ABELLARD Alexandre,E001 - E001, ,N°6,TD
+10/22, ,11h00 - 12h30,S1_AB,Thermique - Mécanique,RIPERT Marc,E004 - E004, ,N°8,TD
+10/22, ,13h30 - 15h00,S1_AB<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,RIPERT Marc,E201 - E201, ,N°1,TP
+10/22, ,13h30 - 15h00,S1_EF<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,LE BEUX Sylvia,E213 - E213, ,N°4,TP
+10/22, ,15h00 - 16h30,S1_EF<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,RIPERT Marc,E201 - E201, ,N°1,TP
+10/22, ,15h00 - 16h30,S1_AB<DUT 1 GEII - Temps plein,Ad.- Méth. réussite univ.,LE BEUX Sylvia, , ,N°4,TP
+10/23,A,08h00 - 09h30,S1_CD,Anglais,WULLEMAN Isabelle,B202 - B202, , ,TD
+10/23, ,08h00 - 09h30,S1_EF,Energie,KAROSKI Stephane,E201 - E201, ,N°3,TD
+10/23, ,08h00 - 09h30,S1_A,Syst. d'information num.,KRAMMER Michel,E214 - E214, ,N°4,TP
+10/23, ,08h00 - 11h00,S1_H,Informatique,ABELLARD Alexandre,E206 - E206, ,N°10,TP
+10/23, ,08h00 - 11h00,S1_G,Informatique,GIBERT Sylvain,E213 - E213, ,N°8,TP
+10/23,A,09h30 - 11h00,S1_EF,Anglais,WULLEMAN Isabelle,B202 - B202, , ,TD
+10/23, ,09h30 - 11h00,S1_AB,Energie,LEREDDE Alexandre,E001 - E001, ,N°3,TD
+10/23, ,09h30 - 11h00,S1_CD,Energie,KAROSKI Stephane,E006 - E006, ,N°3,TD
+10/23, ,11h00 - 12h30, ,Mathématiques,LE BEUX Sylvia,A051 - AMPHI OUEST, ,N°5,Cours (CM)
+10/23, ,13h30 - 15h00,S1_F,Anglais,BAVOUX Emmanuel,B210 - B210, ,N°1,TP
+10/23, ,13h30 - 15h00,S1_GH,Energie,KAROSKI Stephane,E001 - E001, ,N°4,TD
+10/23, ,13h30 - 15h00,S1_AB,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°8,TD
+10/23, ,13h30 - 15h00,S1_E,Syst. d'information num.,LIEBAUT Jean-francois,E214 - E214, ,N°4,TP
+10/23, ,13h30 - 15h00,S1_D,Syst. d'information num.,ABELLARD Alexandre,E200 - E200, ,N°4,TP
+10/23, ,15h00 - 16h30,S1_D,Anglais,BAVOUX Emmanuel,B210 - B210, ,N°1,TP
+10/23, ,15h00 - 16h30,S1_GH,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°8,TD
+10/23, ,15h00 - 16h30,S1_F,Syst. d'information num.,LIEBAUT Jean-francois,E214 - E214, ,N°4,TP
+10/23, ,15h00 - 18h00,S1_B,Informatique,GRIMALDI Michel,E206 - E206, ,N°8,TP
+10/24,A,08h00 - 09h30,S1_GH,Anglais,MARKU Nelly,B202 - B202, , ,TD
+10/24, ,08h00 - 09h30,S1_CD,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°8,TD
+10/24, ,08h00 - 09h30,S1_B,Syst. d'information num.,KRAMMER Michel,E214 - E214, ,N°4,TP
+10/24,A,09h30 - 11h00,S1_AB,Expression Communication,ARRIVE Nadege,E101B - E101, , ,TD
+10/24, ,09h30 - 11h00,S1_EF,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°8,TD
+10/24, ,09h30 - 11h00,S1_GH,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°8,TD
+10/24, ,09h30 - 12h30,S1_D,Réal. d'ens. pluritechno.,ARLOTTO Philippe,E202 - E202, ,N°9,TP
+10/24, ,09h30 - 12h30,S1_C,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°9,TP
+10/24, ,11h00 - 12h30,S1_AB,Energie,LEREDDE Alexandre,E004 - E004, ,N°4,TD
+10/24, ,11h00 - 12h30,S1_GH,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°8,TD
+10/24, ,11h00 - 12h30,S1_EF,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°8,TD
+10/25, ,08h00 - 09h30,S1_CD,Energie,KAROSKI Stephane,E001 - E001, ,N°4,TD
+10/25, ,08h00 - 11h00,S1_A,Informatique,PIGNOL Stephane,E213 - E213, ,N°8,TP
+10/25, ,09h30 - 11h00,S1_EF,Energie,KAROSKI Stephane,E201 - E201, ,N°4,TD
+10/25, ,09h30 - 11h00,S1_CD,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°8,TD
+10/25, ,11h00 - 12h30, ,Thermique - Mécanique,RIPERT Marc,E002 - E002E208 - E208, ,N°4,DS
+10/25, ,13h30 - 15h00,S1_AB,Anglais,MARKU Nelly,B202 - B202, ,N°7,TD
+10/25, ,13h30 - 15h00,S1_E,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°5,TP
+10/25, ,13h30 - 15h00,S1_C,Syst. d'information num.,ABELLARD Alexandre,E200 - E200, ,N°4,TP
+10/25, ,13h30 - 16h30,S1_H,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°9,TP
+10/25, ,13h30 - 16h30,S1_G,Réal. d'ens. pluritechno.,LELAY Pascal,E217 - E217, ,N°9,TP
+10/25, ,15h00 - 16h30,S1_C,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°5,TP

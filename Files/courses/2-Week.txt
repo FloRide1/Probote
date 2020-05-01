@@ -1,0 +1,57 @@
+9/02, ,08h00 - 09h30, ,Rentrée,ABELLARD AlexandreARLOTTO PhilippeBOIZOT NicolasBUSVELLE EricCHITTARO FrancescaGRIMALDI MichelKAROSKI StephaneKRAMMER MichelLE BEUX SylviaLEREDDE AlexandreNEANNE NicolasPIOCH SebastienREYMOND CorineRIPERT Marc,A051 - AMPHI OUEST, ,N°1, 
+9/02, ,09h30 - 11h00,S1_CD,Init. gestion projet,KAHN Maurice,E004 - E004, ,N°1,TD
+9/02, ,09h30 - 11h00,S1_AB,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/02, ,09h30 - 11h00,S1_EF,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°1,TD
+9/02, ,09h30 - 12h30,S1_G,Réal. d'ens. pluritechno.,LELAY Pascal,E217 - E217, ,N°1,TP
+9/02, ,09h30 - 12h30,S1_H,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°1,TP
+9/02, ,11h00 - 12h30,S1_AB,Init. gestion projet,KAHN Maurice,E004 - E004, ,N°1,TD
+9/02, ,11h00 - 12h30,S1_CD,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/02, ,13h30 - 15h00,S1_GH,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TD
+9/02, ,13h30 - 15h00,S1_EF,Init. gestion projet,KAHN Maurice,E004 - E004, ,N°1,TD
+9/02, ,13h30 - 16h30,S1_A,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°1,TP
+9/02, ,13h30 - 16h30,S1_D,Réal. d'ens. pluritechno.,ARLOTTO Philippe,E202 - E202, ,N°1,TP
+9/02, ,15h00 - 16h30,S1_GH,Init. gestion projet,KAHN Maurice,E004 - E004, ,N°1,TD
+9/03, ,08h00 - 11h00,S1_B,Réal. d'ens. pluritechno.,LIEBAUT Jean-francois,E214 - E214, ,N°1,TP
+9/03, ,08h00 - 11h00,S1_E,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°1,TP
+9/03, ,09h30 - 11h00,S1_G,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TP
+9/03, ,09h30 - 11h00,S1_CD,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°1,TD
+9/03, ,11h00 - 12h30, ,Systèmes électroniques,KAROSKI Stephane,A050 - AMPHI EST, ,N°1,Cours (CM)
+9/03, ,13h30 - 15h00,S1_AB,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°1,TD
+9/03, ,13h30 - 16h30,S1_F,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°1,TP
+9/03, ,13h30 - 16h30,S1_C,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°1,TP
+9/03, ,15h00 - 16h30,S1_AB,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TD
+9/04, ,08h00 - 09h30,S1_CD,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°2,TD
+9/04, ,08h30 - 10h00,S1_EF,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°1,TD
+9/04, ,10h00 - 11h00, ,Informatique,ARLOTTO Philippe,A051 - AMPHI OUEST, ,N°1,Cours (CM)
+9/04, ,11h00 - 12h30,S1_F,Informatique,PIGNOL Stephane,E213 - E213, ,N°1,TP
+9/04, ,11h00 - 12h30,S1_AB,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°1,TD
+9/04, ,11h00 - 12h30,S1_GH,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/04, ,13h30 - 16h30,S1_H,Informatique,ABELLARD Alexandre,E200 - E200, ,N°1,TP
+9/04, ,13h30 - 16h30,S1_A,Informatique,PIGNOL Stephane,E213 - E213, ,N°1,TP
+9/04, ,13h30 - 16h30,S1_B,Informatique,GRIMALDI Michel,E206 - E206, ,N°1,TP
+9/04, ,13h30 - 16h30,S1_E,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°2,TP
+9/04, ,13h30 - 16h30,S1_F,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°2,TP
+9/05, ,08h00 - 09h30,S1_GH,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°2,TD
+9/05, ,08h00 - 11h00,S1_C,Informatique,GUIS Vincente,E206 - E206, ,N°1,TP
+9/05, ,08h00 - 11h00,S1_D,Informatique,ABELLARD Alexandre,E213 - E213, ,N°1,TP
+9/05, ,09h30 - 11h00,S1_A,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TP
+9/05, ,09h30 - 11h00,S1_GH,Mathématiques,LE BEUX Sylvia,E005 - E005, ,N°1,TD
+9/05, ,09h30 - 11h00,S1_EF,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°1,TD
+9/05, ,11h00 - 12h30,S1_CD,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TD
+9/05, ,11h00 - 12h30,S1_F,Informatique,PIGNOL Stephane,E213 - E213, ,N°2,TP
+9/05, ,11h00 - 12h30,S1_E,Informatique,ARLOTTO Philippe,E206 - E206, ,N°1,TP
+9/05, ,11h00 - 12h30,S1_AB,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°2,TD
+9/05, ,11h00 - 12h30,S1_GH,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°1,TD
+9/06, ,08h00 - 09h30, ,Syst. d'information num.,KRAMMER Michel,A051 - AMPHI OUEST, ,N°1,Cours (CM)
+9/06, ,09h30 - 11h00,S1_EF,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TD
+9/06, ,09h30 - 11h00,S1_CD,Thermique - Mécanique,RIPERT Marc,E201 - E201, ,N°1,TD
+9/06, ,09h30 - 12h30,S1_G,Informatique,GIBERT Sylvain,E213 - E213, ,N°1,TP
+9/06, ,09h30 - 12h30,S1_A,Réal. d'ens. pluritechno.,REYMOND Corine,E217 - E217, ,N°2,TP
+9/06, ,09h30 - 12h30,S1_B,Réal. d'ens. pluritechno.,LIEBAUT Jean-francois,E209 - E209, ,N°2,TP
+9/06, ,09h30 - 12h30,S1_H,Réal. d'ens. pluritechno.,KRAMMER Michel,E214 - E214, ,N°2,TP
+9/06, ,11h00 - 12h30,S1_C,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TP
+9/06, ,11h00 - 12h30,S1_E,Informatique,ARLOTTO Philippe,E202 - E202, ,N°2,TP
+9/06, ,13h30 - 15h00,S1_EF,Réal. d'ens. pluritechno.,REYMOND Corine,E003 - E003, ,N°2,TD
+9/06, ,13h30 - 16h30,S1_D,Réal. d'ens. pluritechno.,ARLOTTO Philippe,E202 - E202, ,N°2,TP
+9/06, ,13h30 - 16h30,S1_G,Réal. d'ens. pluritechno.,LELAY Pascal,E217 - E217, ,N°2,TP
+9/06, ,15h00 - 16h30,S1_E,Expression Communication,ARRIVE Nadege,E101B - E101, ,N°1,TP
