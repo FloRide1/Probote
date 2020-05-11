@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 const request = require('./request');
 const cipher = require('./cipher');
 const util = require('./util');
@@ -9,7 +7,8 @@ const state =
     init: false
 };
 
-const data = {
+const data = 
+{
     session: null
 };
 
@@ -57,21 +56,16 @@ async function init(url)
                 Uuid: cipher.getUUID(session)
             }
         }
-    })
-    .then ((ret) =>
-    {
-
     });
-
-    const data2 = (await request.pronote({
+    await request.pronote({
         session,
 
         name: 'DemandeParametreUtilisateur',
         content: {}
-    }));
+    });
 
 
-    const ressources = (await request.pronote({
+    await request.pronote({
         session,
 
         name: 'FonctionRenvoyerListeDeRessource',
@@ -91,12 +85,15 @@ async function init(url)
                 "filtresRessource":[]
             }
         }
-    })).donneesSec.donnees.ListeRessources.Liste;
-
-    for (var i = 0; i < ressources.length; i++)
+    })
+    .then((ret) =>
     {
-        data[ressources[i].L] = ressources[i].N;
-    }
+        ret.donneesSec.donnees.ListeRessources.Liste.forEach((ressource) =>
+        {
+            data[ressource.L] = ressource.N;
+        });
+    });
+
 
     data.session = session;
     
@@ -112,7 +109,7 @@ async function getWeek(sector, week)
 
     let session = data.session;
 
-    var week = (await request.pronote({
+    week = (await request.pronote({
         session,
 
         name: 'FonctionEmploiDuTemps',
