@@ -1,0 +1,161 @@
+const fs = require('fs');
+
+const request = require('./request');
+const cipher = require('./cipher');
+const util = require('./util');
+
+const state = 
+{
+    init: false
+};
+
+const data = {
+    session: null
+};
+
+async function init(url)
+{
+    if (!url)
+    {
+        throw new Error('Bad request');
+    }
+
+    console.log(`Connection to ${url}...`);
+
+    let html = await request.http({
+        url: url + 'invite?login=true',
+        method: 'GET'
+    });
+
+    let params = util.extractStart(html);
+
+    let session = cipher.createSession();
+
+    cipher.init({
+        session,
+
+        modulo: params.MR,
+        exposant: params.ER,
+        noCompress: params.sCoA
+    });
+
+    request.initPronote({
+        session,
+
+        url,
+        espace: params.a,
+        sessionID: params.i,
+        noAES: params.sCrA
+    });
+
+    await request.pronote({
+        session,
+
+        name: 'FonctionParametres',
+        content: {
+            donnees: {
+                Uuid: cipher.getUUID(session)
+            }
+        }
+    })
+    .then ((ret) =>
+    {
+
+    });
+
+    const data2 = (await request.pronote({
+        session,
+
+        name: 'DemandeParametreUtilisateur',
+        content: {}
+    }));
+
+
+    const ressources = (await request.pronote({
+        session,
+
+        name: 'FonctionRenvoyerListeDeRessource',
+        content: {
+            "_Signature_":
+            {
+                "Onglet":"DIPLOME.EDT.EDT_GRILLE"
+            },
+            "donnees":
+            {
+                "GenreRessource":1,
+                "GenreRecherche":2,
+                "AvecPublicationForcee":false,
+                "NomRessource":"",
+                "PourEmail":false,
+                "PourRessource":false,
+                "filtresRessource":[]
+            }
+        }
+    })).donneesSec.donnees.ListeRessources.Liste;
+
+    for (var i = 0; i < ressources.length; i++)
+    {
+        data[ressources[i].L] = ressources[i].N;
+    }
+
+    data.session = session;
+    
+    return true;    
+}
+
+async function getWeek(sector, week)
+{
+
+    if (!state.init)
+        await init("https://planning.univ-tln.fr/");
+    state.init = true;
+
+    let session = data.session;
+
+    var week = (await request.pronote({
+        session,
+
+        name: 'FonctionEmploiDuTemps',
+        content: {
+            "_Signature_":
+            {
+                "Onglet":"DIPLOME.EDT.EDT_LISTE",
+                "Recherche":
+                {
+                    "N":data[sector],
+                    "G":1,
+                    "L":sector
+                }
+            },
+            "donnees":
+            {
+                "GenrePeriodeEDT":2,
+                "GenreAffichageEDT":1,
+                "FiltreRessources":
+                {
+                    "_T":26,
+                    "V":"[0,6..7]"
+                },
+                "AvecIndisponibilites":false,
+                "AvecDomaineCours":true,
+                "AvecDomainePere":false,
+                "filterPlagesHoraires":false,
+                "Domaine":
+                {
+                    "_T":8,
+                    "V":`[${week}]`
+                }
+            }
+        }
+    }));
+
+    data.session = session;
+    return week;
+}
+
+
+module.exports = 
+{ 
+    init,
+    getWeek
+};
