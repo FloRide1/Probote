@@ -1,0 +1,787 @@
+{
+    "<DUT 1 GEII - Temps plein>": {
+        "S2_F": {
+            "4-11": [{
+                "hours": "16h30 - 19h30",
+                "day": 34,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["MARLINGE Pierre"],
+                "rooms": ["E214 - E214"],
+                "type": "TP"
+            }, {
+                "hours": "10h00 - 12h00",
+                "day": 8,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["BOIZOT Nicolas"],
+                "rooms": ["E200 - E200"],
+                "type": "TP"
+            }, {
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["NEANNE Nicolas"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }],
+            "4-12": [{
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }],
+            "4-13": [{
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Projet perso. et prof.",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }],
+            "4-14": [{
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["KRAMMER Michel"],
+                "rooms": ["E214 - E214"],
+                "type": "TP"
+            }],
+            "4-15": [{
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }]
+        },
+        "S2_GH": {
+            "4-11": [{
+                "hours": "15h00 - 16h30",
+                "day": 28,
+                "delta": 6,
+                "topic": "Anglais",
+                "teachers": ["WULLEMAN Isabelle"],
+                "rooms": ["B202 - B202"],
+                "type": "TD"
+            }, {
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Mathématiques",
+                "teachers": ["LE BEUX Sylvia"],
+                "rooms": ["E005 - E005"],
+                "type": "TD"
+            }, {
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Automatisme",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E007 - E007"],
+                "type": "TD"
+            }],
+            "4-12": [{
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["KAROSKI Stephane"],
+                "rooms": ["E001 - E001"],
+                "type": "TD"
+            }],
+            "4-13": [{
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["KAROSKI Stephane"],
+                "rooms": ["E001 - E001"],
+                "type": "TD"
+            }, {
+                "hours": "15h00 - 16h30",
+                "day": 28,
+                "delta": 6,
+                "topic": "Dév. compétences projet",
+                "teachers": ["PERO Muriel"],
+                "rooms": ["E200 - E200"],
+                "type": "TD",
+                "motif": "REPORTE"
+            }]
+        },
+        "S2_D": {
+            "4-11": [{
+                "hours": "15h00 - 16h30",
+                "day": 28,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }, {
+                "hours": "08h00 - 10h00",
+                "day": 0,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["BOIZOT Nicolas"],
+                "rooms": ["E200 - E200"],
+                "type": "TP"
+            }],
+            "4-12": [{
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["BRAVO Juan"],
+                "rooms": ["E215 - E215"],
+                "type": "TP"
+            }],
+            "4-13": [{
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E217 - E217"],
+                "type": "TP"
+            }],
+            "4-14": [{
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Projet perso. et prof.",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }],
+            "4-15": [{
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }, {
+                "hours": "15h00 - 17h30",
+                "day": 28,
+                "delta": 10,
+                "topic": "Energie",
+                "teachers": ["KAROSKI Stephane"],
+                "rooms": ["E216 - E216"],
+                "type": "TP"
+            }, {
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["MICHEL Mikael"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }]
+        },
+        "S2_H": {
+            "4-11": [{
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Projet perso. et prof.",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }],
+            "4-12": [{
+                "hours": "09h30 - 12h30",
+                "day": 6,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E217 - E217"],
+                "type": "TP"
+            }, {
+                "hours": "15h00 - 16h30",
+                "day": 28,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }],
+            "4-13": [{
+                "hours": "09h00 - 11h00",
+                "day": 4,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["DAID Assia"],
+                "rooms": ["E200 - E200"],
+                "type": "TP"
+            }],
+            "4-14": [{
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }],
+            "4-15": [{
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["BRAVO Juan"],
+                "rooms": ["E215 - E215"],
+                "type": "TP"
+            }, {
+                "hours": "16h30 - 19h30",
+                "day": 34,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["MICHEL Mikael"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }]
+        },
+        "S2_EF": {
+            "4-11": [{
+                "hours": "08h00 - 09h30",
+                "day": 0,
+                "delta": 6,
+                "topic": "Automatisme",
+                "teachers": ["NEANNE Nicolas"],
+                "rooms": ["E007 - E007"],
+                "type": "TD"
+            }],
+            "4-12": [{
+                "hours": "08h00 - 09h30",
+                "day": 0,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["LEREDDE Alexandre"],
+                "rooms": ["E216 - E216"],
+                "type": "TD"
+            }, {
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Anglais",
+                "teachers": ["LIEUTAUD Alexandra"],
+                "rooms": ["B202 - B202"],
+                "type": "TD"
+            }, {
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Mathématiques",
+                "teachers": ["LE BEUX Sylvia"],
+                "rooms": ["E005 - E005"],
+                "type": "TD"
+            }, {
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Mathématiques",
+                "teachers": ["LE BEUX Sylvia"],
+                "rooms": ["E005 - E005"],
+                "type": "TD",
+                "motif": "REPORTE"
+            }],
+            "4-13": [{
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Dév. compétences projet",
+                "teachers": ["PERO Muriel"],
+                "rooms": ["E004 - E004"],
+                "type": "TD",
+                "motif": "REPORTE"
+            }],
+            "4-15": [{
+                "hours": "08h00 - 09h30",
+                "day": 0,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["LEREDDE Alexandre"],
+                "rooms": ["E216 - E216"],
+                "type": "TD"
+            }]
+        },
+        "S2_A": {
+            "4-11": [{
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E202 - E202"],
+                "type": "TP"
+            }, {
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E006 - E006"],
+                "type": "TP"
+            }],
+            "4-12": [{
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E217 - E217"],
+                "type": "TP"
+            }, {
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["TELLAROLI Arnaud"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }],
+            "4-13": [{
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E006 - E006"],
+                "type": "TP"
+            }, {
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }],
+            "4-15": [{
+                "hours": "09h30 - 11h30",
+                "day": 6,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["TAY Ahmad"],
+                "rooms": ["E104 - E104"],
+                "type": "TP"
+            }, {
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E202 - E202"],
+                "type": "TP"
+            }]
+        },
+        "S2_CD": {
+            "4-11": [{
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Automatisme",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E007 - E007"],
+                "type": "TD"
+            }, {
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Anglais",
+                "teachers": ["WULLEMAN Isabelle"],
+                "rooms": ["B202 - B202"],
+                "type": "TD"
+            }],
+            "4-12": [{
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Mathématiques",
+                "teachers": ["LE BEUX Sylvia"],
+                "rooms": ["E005 - E005"],
+                "type": "TD",
+                "motif": "REPORTE"
+            }],
+            "4-13": [{
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["KAROSKI Stephane"],
+                "rooms": ["E001 - E001"],
+                "type": "TD"
+            }, {
+                "hours": "08h00 - 09h30",
+                "day": 0,
+                "delta": 6,
+                "topic": "Mathématiques",
+                "teachers": ["LE BEUX Sylvia"],
+                "rooms": ["E005 - E005"],
+                "type": "TD"
+            }, {
+                "hours": "16h30 - 18h00",
+                "day": 34,
+                "delta": 6,
+                "topic": "Dév. compétences projet",
+                "teachers": ["PERO Muriel"],
+                "rooms": ["E200 - E200"],
+                "type": "TD",
+                "motif": "REPORTE"
+            }],
+            "4-15": [{
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["KAROSKI Stephane"],
+                "rooms": ["E001 - E001"],
+                "type": "TD"
+            }]
+        },
+        "S2_E": {
+            "4-11": [{
+                "hours": "09h30 - 12h30",
+                "day": 6,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["NEANNE Nicolas"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }, {
+                "hours": "13h30 - 15h30",
+                "day": 22,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["BOIZOT Nicolas"],
+                "rooms": ["E104 - E104"],
+                "type": "TP"
+            }],
+            "4-12": [{
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }],
+            "4-13": [{
+                "hours": "15h00 - 16h30",
+                "day": 28,
+                "delta": 6,
+                "topic": "Projet perso. et prof.",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }, {
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E202 - E202"],
+                "type": "TP"
+            }],
+            "4-14": [{
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }],
+            "4-15": [{
+                "hours": "13h30 - 16h00",
+                "day": 22,
+                "delta": 10,
+                "topic": "Energie",
+                "teachers": ["LEREDDE Alexandre"],
+                "rooms": ["E226 - E226"],
+                "type": "TP"
+            }, {
+                "hours": "09h30 - 12h30",
+                "day": 6,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["LIEBAUT Jean-francois"],
+                "rooms": ["E215 - E215"],
+                "type": "TP"
+            }]
+        },
+        "S2_B": {
+            "4-11": [{
+                "hours": "09h30 - 12h30",
+                "day": 6,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["KRAMMER Michel"],
+                "rooms": ["E214 - E214"],
+                "type": "TP"
+            }, {
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }],
+            "4-12": [{
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }, {
+                "hours": "09h00 - 11h00",
+                "day": 4,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["TAY Ahmad"],
+                "rooms": ["E200 - E200"],
+                "type": "TP"
+            }],
+            "4-13": [{
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["NEANNE Nicolas"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }],
+            "4-15": [{
+                "hours": "09h30 - 12h30",
+                "day": 6,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["GIBERT Sylvain"],
+                "rooms": ["E213 - E213"],
+                "type": "TP"
+            }, {
+                "hours": "15h00 - 16h30",
+                "day": 28,
+                "delta": 6,
+                "topic": "Projet perso. et prof.",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E006 - E006"],
+                "type": "TP"
+            }]
+        },
+        "S2_C": {
+            "4-11": [{
+                "hours": "15h30 - 17h30",
+                "day": 30,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["BOIZOT Nicolas"],
+                "rooms": ["E104 - E104"],
+                "type": "TP"
+            }],
+            "4-12": [{
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }, {
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["PIGNOL Stephane"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }, {
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }],
+            "4-13": [{
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["KRAMMER Michel"],
+                "rooms": ["E214 - E214"],
+                "type": "TP"
+            }],
+            "4-14": [{
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["GIES Valentin"],
+                "rooms": ["E105 - E105"],
+                "type": "TP"
+            }],
+            "4-15": [{
+                "hours": "13h30 - 15h00",
+                "day": 22,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E006 - E006"],
+                "type": "TP"
+            }]
+        },
+        "S2_AB": {
+            "4-11": [{
+                "hours": "16h30 - 18h00",
+                "day": 34,
+                "delta": 6,
+                "topic": "Dév. compétences projet",
+                "teachers": ["PERO Muriel"],
+                "rooms": ["E200 - E200"],
+                "type": "TD",
+                "motif": "REPORTE"
+            }],
+            "4-12": [{
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["LEREDDE Alexandre"],
+                "rooms": ["E216 - E216"],
+                "type": "TD"
+            }],
+            "4-13": [{
+                "hours": "15h00 - 16h30",
+                "day": 28,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["LEREDDE Alexandre"],
+                "rooms": ["E004 - E004"],
+                "type": "TD"
+            }],
+            "4-14": [{
+                "hours": "08h00 - 09h30",
+                "day": 0,
+                "delta": 6,
+                "topic": "Anglais",
+                "teachers": ["LIEUTAUD Alexandra"],
+                "rooms": ["B202 - B202"],
+                "type": "TD"
+            }, {
+                "hours": "09h30 - 11h00",
+                "day": 6,
+                "delta": 6,
+                "topic": "Automatisme",
+                "teachers": ["NEANNE Nicolas"],
+                "rooms": ["E007 - E007"],
+                "type": "TD"
+            }],
+            "4-15": [{
+                "hours": "08h00 - 09h30",
+                "day": 0,
+                "delta": 6,
+                "topic": "Mathématiques",
+                "teachers": ["LE BEUX Sylvia"],
+                "rooms": ["E005 - E005"],
+                "type": "TD"
+            }]
+        },
+        "S2_G": {
+            "4-12": [{
+                "hours": "09h30 - 12h30",
+                "day": 6,
+                "delta": 12,
+                "topic": "Informatique embarquée",
+                "teachers": ["LIEBAUT Jean-francois"],
+                "rooms": ["E213 - E213"],
+                "type": "TP"
+            }],
+            "4-13": [{
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "E&R d'ens. pluritechno.",
+                "teachers": ["KRAMMER Michel"],
+                "rooms": ["E214 - E214"],
+                "type": "TP"
+            }],
+            "4-14": [{
+                "hours": "09h00 - 11h00",
+                "day": 4,
+                "delta": 8,
+                "topic": "Outils logiciels",
+                "teachers": ["DAID Assia"],
+                "rooms": ["E200 - E200"],
+                "type": "TP"
+            }],
+            "4-15": [{
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Expression Communication",
+                "teachers": ["ARRIVE Nadege"],
+                "rooms": ["E101B - E101"],
+                "type": "TP"
+            }, {
+                "hours": "13h30 - 16h30",
+                "day": 22,
+                "delta": 12,
+                "topic": "Automatisme",
+                "teachers": ["GIBERT Sylvain"],
+                "rooms": ["E212 - E212"],
+                "type": "TP"
+            }, {
+                "hours": "08h00 - 11h00",
+                "day": 0,
+                "delta": 12,
+                "topic": "Dév. compétences projet",
+                "teachers": ["REYMOND Corine"],
+                "rooms": ["E211 - E211"],
+                "type": "TP",
+                "motif": "REPORTE"
+            }]
+        },
+        "all": {
+            "4-13": [{
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Energie",
+                "teachers": ["LEREDDE Alexandre"],
+                "rooms": ["A051 - AMPHI OUEST"],
+                "type": "Cours (CM)"
+            }],
+            "4-14": [{
+                "hours": "11h00 - 12h30",
+                "day": 12,
+                "delta": 6,
+                "topic": "Automatisme",
+                "teachers": ["NEANNE Nicolas"],
+                "rooms": ["E002 - E002", "E208 - E208"],
+                "type": "DS"
+            }]
+        }
+    }
+}

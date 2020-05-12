@@ -1,0 +1,18 @@
+{
+    "classes": {
+        "functionName" : "FonctionEmploiDuTemps",
+        "path" : "./src/classes.json",
+        "index" : {
+            "hours"     :  9,
+            "groups"    : 14,
+            "topic"     :  0,
+            "teachers"  :  1,
+            "rooms"     :  3,
+            "type"      :  7
+        },
+        "delta_time" : 15,
+        "max_time" : 780,
+        "begin_date" : "2019-08-19T08:00:00",
+        "rootName" : "all"
+    }
+}
