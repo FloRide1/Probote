@@ -1,6 +1,7 @@
 const request = require('./request');
 const cipher = require('./cipher');
 const util = require('./util');
+const config = require("./config.json");
 
 const state = 
 {
@@ -38,7 +39,7 @@ async function init(url)
         noCompress: params.sCoA
     });
 
-    request.initPronote({
+    await request.initPronote({
         session,
 
         url,
@@ -63,7 +64,6 @@ async function init(url)
         name: 'DemandeParametreUtilisateur',
         content: {}
     });
-
 
     await request.pronote({
         session,
@@ -94,6 +94,7 @@ async function init(url)
         });
     });
 
+    state.init = true;
 
     data.session = session;
     
@@ -104,12 +105,12 @@ async function getWeek(sector, week)
 {
 
     if (!state.init)
-        await init("https://planning.univ-tln.fr/");
-    state.init = true;
+        await init(config.url);
 
     let session = data.session;
 
-    week = (await request.pronote({
+    console.log(`Fetching data for ${sector}\tWeek : ${week}`);
+    let ret = await request.pronote({
         session,
 
         name: 'FonctionEmploiDuTemps',
@@ -144,10 +145,10 @@ async function getWeek(sector, week)
                 }
             }
         }
-    }));
+    });
 
     data.session = session;
-    return week;
+    return ret;
 }
 
 

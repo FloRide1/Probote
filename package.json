@@ -9,6 +9,11 @@
   "author": "Florian Reimat - Andre Mihalic",
   "license": "ISC",
   "dependencies": {
-    "puppeteer": "^3.0.4"
+    "puppeteer": "^3.0.4",
+    "axios": "^0.18.1",
+    "jsdom": "^11.7.0",
+    "node-forge": "0.6.33",
+    "pako": "^1.0.6",
+    "xml2js": "^0.4.19"
   }
 }

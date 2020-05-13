@@ -1,7 +1,7 @@
 {
     "classes": {
         "functionName" : "FonctionEmploiDuTemps",
-        "path" : "./src/classes.json",
+        "path" : "./data/classes.json",
         "index" : {
             "hours"     :  9,
             "groups"    : 14,
@@ -14,5 +14,6 @@
         "max_time" : 780,
         "begin_date" : "2019-08-19T08:00:00",
         "rootName" : "all"
-    }
+    },
+    "url": "https://planning.univ-tln.fr/"
 }
