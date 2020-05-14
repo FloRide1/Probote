@@ -4,16 +4,35 @@ const getDate = require('./util').getDate;
 
 function StoreData(sectorName,data,week){
     file = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
-    obj = JSON.parse(file)
+    obj = JSON.parse(file);
 
     if (obj[sectorName] == undefined){
-        obj[sectorName] = {}
-        console.log("New sector registered : " + sectorName)
+        obj[sectorName] = {};
+        console.log("New sector registered : " + sectorName);
     }
-    let sector = obj[sectorName]
+    let sector = obj[sectorName];
 
     for (let i = 0; i < data.length; i++) {
         let date = getDate(week,i);
+
+
+
+
+
+        //////////////////////////////////////////////////////////////
+        ///////////               NEED FIX                 /////////// 
+        //////////////////////////////////////////////////////////////
+        date=date.split("-");                              ///////////
+        date[0]=parseInt(date[0])+1;                       ///////////
+        date=date.join("-");                               ///////////
+        //////////////////////////////////////////////////////////////
+        ///////////               NEED FIX                 /////////// 
+        //////////////////////////////////////////////////////////////
+
+
+
+
+        
         data[i].forEach(element => {
             let groups = element.groups;
             let dayName = element.day%(config.classes.max_time/config.classes.delta_time)
@@ -104,18 +123,18 @@ function StoreData(sectorName,data,week){
 
 function ParseData(data){
     //obj = JSON.parse(data);
-    obj = data
+    obj = data;
     functionName = obj.nom;
-    let classes_parse = [[],[],[],[],[],[],[]]
+    let classes_parse = [[],[],[],[],[],[],[]];
     if (functionName == config.classes.functionName){
-        listClasses = obj.donneesSec.donnees.ListeCours
-        listAbortedClasses = obj.donneesSec.donnees.ListeAnnulationsCours
+        listClasses = obj.donneesSec.donnees.ListeCours;
+        listAbortedClasses = obj.donneesSec.donnees.ListeAnnulationsCours;
 
         listClasses.forEach(element => {
-            var weekIndex = element.G
-            let classe = element.listeC
-            let day = element.p
-            let delta = element.d
+            var weekIndex = element.G;
+            let classe = element.listeC;
+            let day = element.p;
+            let delta = element.d;
             let groups = [];
             classe.forEach(x => {
                 let i = x.G;
@@ -127,7 +146,7 @@ function ParseData(data){
                         break;
                     case index.groups:
                         x.C.forEach(j => {
-                            groups.push(j.L)
+                            groups.push(j.L);
                         });           
                         break;
                     case index.topic:
@@ -136,17 +155,17 @@ function ParseData(data){
                     case index.teachers:
                         teachers = []
                         x.C.forEach(j => {
-                            teachers.push(j.L)
+                            teachers.push(j.L);
                         });  
                         break;
                     case index.rooms:
                         rooms = []
                         x.C.forEach(j => {
-                            rooms.push(j.L)
+                            rooms.push(j.L);
                         }); 
                         break;
                     case index.type:
-                        type = x.C.L
+                        type = x.C.L;
                         break;
                 }
             });
@@ -162,6 +181,7 @@ function ParseData(data){
                 teachers : teachers,
                 type : type
             }
+
             classes_parse[parseInt(day/ratio,10)%7].push(classe_parse);
         });
         
@@ -224,9 +244,114 @@ function ParseData(data){
     return classes_parse;
 }
 
+function listAllSectors(){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    let array = []
+    for (x in data){
+        array.push(x)
+    }
+    return array
+}
+
+function listAllGroup(sector){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined){
+        let array = []
+        for (x in data[sector]){
+            array.push(x)
+        }
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllDate(sector,group){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined){
+        let array = []
+        for (x in data[sector][group]){
+            array.push(x)
+        }
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllClasses(sector,group,date){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []
+        data[sector][group][date].forEach(x => {
+            array.push(x)
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllTopics(sector,group,date){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data);
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []
+        data[sector][group][date].forEach(x => {
+            array.push(x.topic)
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllClassesfromType(sector,group,date,type){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []           
+        data[sector][group][date].forEach(x => {
+            if (x.type == type){
+                array.push(x)
+            }
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllAbortedClass(sector,group,date){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []
+        data[sector][group][date].forEach(x => {
+            if (x.motif != undefined){
+                array.push(x)
+            }
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
 
 module.exports = 
 {
     StoreData,
-    ParseData
+    ParseData,
+    listAllSectors,
+    listAllGroup,
+    listAllDate,
+    listAllClasses,
+    listAllTopics,
+    listAllClassesfromType,
+    listAllAbortedClass
 };

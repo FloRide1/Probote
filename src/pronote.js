@@ -103,6 +103,8 @@ async function init(url)
 
 async function getWeek(sector, week)
 {
+    //week = (week <= 33) ? week + 19 : week - 33;
+
 
     if (!state.init)
         await init(config.url);

@@ -1,21 +1,17 @@
-const config = require('./src/config.json');
-const sectors = require("./src/util").sectors;
+const fs = require('fs');
 const db = require('./src/database');
-const pronote = require("./src/pronote");
+const pronote = require('./src/pronote');
+const sectors = require('./src/util').sectors;
 
-(async function main(i)
+(async function main(week)
 {
-    await pronote.getWeek(sectors.GEII, i)
-    .then(ret =>
+    await pronote.getWeek(sectors.GEII, week)
+    .then((ret)=>
     {
-        data = db.ParseData(ret);
-        db.StoreData("<DUT 1 GEII - Temps plein>",data,i);
-    })
-    .catch(err =>
-    {
-        console.error(err);       
+        let data = db.ParseData(ret);
+        db.StoreData(sectors.GEII, data, week);
     });
 
-    if (i < 53)
-        setTimeout(main, 1000, i+1);
+    if (week < 52)
+        setTimeout(main, 1000, week + 1);
 })(1);
