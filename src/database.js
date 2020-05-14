@@ -104,7 +104,7 @@ function StoreData(sectorName,data,week){
 
 function ParseData(data){
     //obj = JSON.parse(data);
-    obj = data
+    obj = data;
     functionName = obj.nom;
     let classes_parse = [[],[],[],[],[],[],[]]
     if (functionName == config.classes.functionName){
@@ -224,9 +224,114 @@ function ParseData(data){
     return classes_parse;
 }
 
+function listAllSectors(){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    let array = []
+    for (x in data){
+        array.push(x)
+    }
+    return array
+}
+
+function listAllGroup(sector){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined){
+        let array = []
+        for (x in data[sector]){
+            array.push(x)
+        }
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllDate(sector,group){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined){
+        let array = []
+        for (x in data[sector][group]){
+            array.push(x)
+        }
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllClasses(sector,group,date){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []
+        data[sector][group][date].forEach(x => {
+            array.push(x)
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllTopics(sector,group,date){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data);
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []
+        data[sector][group][date].forEach(x => {
+            array.push(x.topic)
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllClassesfromType(sector,group,date,type){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []           
+        data[sector][group][date].forEach(x => {
+            if (x.type == type){
+                array.push(x)
+            }
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
+function listAllAbortedClass(sector,group,date){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined && data[sector][group] != undefined && data[sector][group][date] != undefined){
+        let array = []
+        data[sector][group][date].forEach(x => {
+            if (x.motif != undefined){
+                array.push(x)
+            }
+        });
+        return array;
+    } else {
+        return undefined;
+    }
+}
+
 
 module.exports = 
 {
     StoreData,
-    ParseData
+    ParseData,
+    listAllSectors,
+    listAllGroup,
+    listAllDate,
+    listAllClasses,
+    listAllTopics,
+    listAllClassesfromType,
+    listAllAbortedClass
 };
