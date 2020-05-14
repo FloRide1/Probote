@@ -14,5 +14,4 @@ const sectors = require('./src/util').sectors;
 
     if (week < 52)
         setTimeout(main, 1000, week + 1);
-    //console.log(db.listAllGroup(sectors.GEII));
 })(1);
