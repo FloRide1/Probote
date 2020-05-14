@@ -4,16 +4,35 @@ const getDate = require('./util').getDate;
 
 function StoreData(sectorName,data,week){
     file = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
-    obj = JSON.parse(file)
+    obj = JSON.parse(file);
 
     if (obj[sectorName] == undefined){
-        obj[sectorName] = {}
-        console.log("New sector registered : " + sectorName)
+        obj[sectorName] = {};
+        console.log("New sector registered : " + sectorName);
     }
-    let sector = obj[sectorName]
+    let sector = obj[sectorName];
 
     for (let i = 0; i < data.length; i++) {
         let date = getDate(week,i);
+
+
+
+
+
+        //////////////////////////////////////////////////////////////
+        ///////////               NEED FIX                 /////////// 
+        //////////////////////////////////////////////////////////////
+        date=date.split("-");                              ///////////
+        date[0]=parseInt(date[0])+1;                       ///////////
+        date=date.join("-");                               ///////////
+        //////////////////////////////////////////////////////////////
+        ///////////               NEED FIX                 /////////// 
+        //////////////////////////////////////////////////////////////
+
+
+
+
+        
         data[i].forEach(element => {
             let groups = element.groups;
             let dayName = element.day%(config.classes.max_time/config.classes.delta_time)
@@ -106,16 +125,16 @@ function ParseData(data){
     //obj = JSON.parse(data);
     obj = data;
     functionName = obj.nom;
-    let classes_parse = [[],[],[],[],[],[],[]]
+    let classes_parse = [[],[],[],[],[],[],[]];
     if (functionName == config.classes.functionName){
-        listClasses = obj.donneesSec.donnees.ListeCours
-        listAbortedClasses = obj.donneesSec.donnees.ListeAnnulationsCours
+        listClasses = obj.donneesSec.donnees.ListeCours;
+        listAbortedClasses = obj.donneesSec.donnees.ListeAnnulationsCours;
 
         listClasses.forEach(element => {
-            var weekIndex = element.G
-            let classe = element.listeC
-            let day = element.p
-            let delta = element.d
+            var weekIndex = element.G;
+            let classe = element.listeC;
+            let day = element.p;
+            let delta = element.d;
             let groups = [];
             classe.forEach(x => {
                 let i = x.G;
@@ -127,7 +146,7 @@ function ParseData(data){
                         break;
                     case index.groups:
                         x.C.forEach(j => {
-                            groups.push(j.L)
+                            groups.push(j.L);
                         });           
                         break;
                     case index.topic:
@@ -136,17 +155,17 @@ function ParseData(data){
                     case index.teachers:
                         teachers = []
                         x.C.forEach(j => {
-                            teachers.push(j.L)
+                            teachers.push(j.L);
                         });  
                         break;
                     case index.rooms:
                         rooms = []
                         x.C.forEach(j => {
-                            rooms.push(j.L)
+                            rooms.push(j.L);
                         }); 
                         break;
                     case index.type:
-                        type = x.C.L
+                        type = x.C.L;
                         break;
                 }
             });
@@ -162,6 +181,7 @@ function ParseData(data){
                 teachers : teachers,
                 type : type
             }
+
             classes_parse[parseInt(day/ratio,10)%7].push(classe_parse);
         });
         
