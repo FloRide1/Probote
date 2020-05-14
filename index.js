@@ -12,6 +12,6 @@ const sectors = require('./src/util').sectors;
         db.StoreData(sectors.GEII, data, week);
     });
 
-    // if (week < 52)
-    //     setTimeout(main, 1000, week + 1);
+    if (week < 52)
+        setTimeout(main, 1000, week + 1);
 })(1);
