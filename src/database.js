@@ -116,8 +116,8 @@ function StoreData(sectorName,data,week){
             });
         });        
     }
-    obj[sectorName] = sector
-    fs.writeFileSync(config.classes.path,JSON.stringify(obj))
+    obj[sectorName] = sector;
+    fs.writeFileSync(config.classes.path,JSON.stringify(obj));
 }
 
 
@@ -246,12 +246,36 @@ function ParseData(data){
 
 function listAllSectors(){
     data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
-    data = JSON.parse(data)
-    let array = []
+    data = JSON.parse(data);
+    let array = [];
     for (x in data){
-        array.push(x)
+        array.push(x);
     }
-    return array
+    return array;
+}
+
+function listAllGroupFiltered(sector){
+    data = fs.readFileSync(config.classes.path,{encoding:'utf8', flag:'r'});
+    data = JSON.parse(data)
+    if (data[sector] != undefined){
+        let array = []
+        for (x in data[sector]){
+            let y=x.split("_");
+            if (y.length>1)
+            {
+                if (y[1].length == 1 && y[0].substring(y[0].length-1) == "2")
+                    array.push(y[1]);
+            }
+        }
+        array.sort();
+        for (let i = 0; i < array.length; i++)
+        {
+            array[i] = "Group " + array[i];
+        }
+        return array;
+    } else {
+        return undefined;
+    }
 }
 
 function listAllGroup(sector){
@@ -342,16 +366,59 @@ function listAllAbortedClass(sector,group,date){
     }
 }
 
+function registreUser(id, sector, group)
+{
+    let users = JSON.parse(fs.readFileSync(config.users.path,{encoding:'utf8', flag:'r'}));
+
+    group = group.split(" ")[1];
+    let groups = listAllGroup(sector);
+    let user_groups = [];
+    for (let el of groups)
+    {
+        if (el === "all")
+            user_groups.push(el);
+        else if (el.split("_")[1].indexOf(group) != -1)
+            user_groups.push(el);
+    }
+
+    users[id] = 
+    {
+        sector: sector,
+        group: user_groups
+    };
+
+    fs.writeFileSync(config.users.path,JSON.stringify(users));
+}
+
+function isUserRegistered(id)
+{
+    let users = JSON.parse(fs.readFileSync(config.users.path,{encoding:'utf8', flag:'r'}));
+    
+    if (users[id])
+        return true;
+    else
+        return false;
+}
+
+function fetchUserData(id)
+{
+    let users = JSON.parse(fs.readFileSync(config.users.path,{encoding:'utf8', flag:'r'}));
+    return [users[id].sector, users[id].group];
+}
 
 module.exports = 
 {
     StoreData,
     ParseData,
     listAllSectors,
+    listAllGroupFiltered,
     listAllGroup,
     listAllDate,
     listAllClasses,
     listAllTopics,
     listAllClassesfromType,
-    listAllAbortedClass
+    listAllAbortedClass,
+    registreUser,
+    isUserRegistered,
+    fetchUserData
 };
