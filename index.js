@@ -344,7 +344,7 @@ const command =
 bot.on('ready', () => 
 {
     console.log(`Bot logged in as ${bot.user.tag} at ${new Date(Date.now())}.`);
-    bot.channels.cache.forEach(channel=>
+    /*bot.channels.cache.forEach(channel=>
     {
         if (channel.type == "text")
         {
@@ -359,7 +359,7 @@ bot.on('ready', () =>
             })
             .catch(logError);
         }
-    });
+    });*/
 });
 
 bot.on('message', async (message) => {
