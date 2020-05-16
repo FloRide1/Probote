@@ -17,56 +17,30 @@ const emoji = config.emoji;
 function log(cmd, user, reply, createdAt)
 {
     console.log("\n");
-    console.log(`Current date: ${new Date(Date.now())}`);
+    console.log(`Current date: ${new Date()}`);
     console.log(`Cmd created at: ${createdAt}`);
     console.log(`Cmd: ${cmd}`);
-    console.log(`Author: ${user}`);
+    console.log(`Author: ${user[0]}, ${user[1]}`);
     console.log(`Response: ${reply}`);
 }
 
 function logError(err)
 {
     console.log("\n");
-    console.log(`Current date: ${new Date(Date.now())}`);
+    console.log(`Current date: ${new Date()}`);
     console.error(`An error occured:  ${err.message}`);
 }
 
-Discord.Message.prototype.logedReply = function(mess, args)
+Discord.Message.prototype.logedMessage = function(mess, type, args)
 {
     return new Promise((resolve, reject)=>
     {
-        this.reply(mess, args)
-        .then((m)=>
-        {
-            log(this.content, this.author.id, mess.content || mess, this.createdAt);
-            resolve(m);
-        })
-        .catch(reject);
-    });
-};
+        let target = (type) ? this.author : this.channel;
 
-Discord.Message.prototype.logedSend = function(mess, args)
-{
-    return new Promise((resolve, reject)=>
-    {
-        this.author.send(mess, args)
+        target.send(mess)
         .then((m)=>
         {
-            log(this.content, this.author.id, mess.content || mess, this.createdAt);
-            resolve(m);
-        })
-        .catch(reject);
-    });
-};
-
-Discord.Message.prototype.logedToAll = function(mess, args)
-{
-    return new Promise((resolve, reject)=>
-    {
-        this.channel.send(mess, args)
-        .then((m)=>
-        {
-            //log(this.content, this.author.id, mess.content || mess, this.createdAt);
+            log(this.content, [this.author.id, this.author.username], mess.content || mess, this.createdAt);
             resolve(m);
         })
         .catch(reject);
@@ -86,26 +60,25 @@ const command =
         {
             exec: (mess) =>
             {
-                let embed = new Discord.MessageEmbed()
+                let embed_public = new Discord.MessageEmbed()
                 .setTitle('Public commands')
                 .setColor(0x08ff10);
                 for (let [cmd, obj] of Object.entries(command.public))
                 {
-                    embed.addField("!"+cmd, obj.desc);
+                    embed_public.addField("!"+cmd, obj.desc);
                 }
 
-                mess.logedToAll(embed)
-                .catch(logError);
-
-                embed = new Discord.MessageEmbed()
+                let embed_protected = new Discord.MessageEmbed()
                 .setTitle('Authentified commands')
                 .setColor(0xffb700);
                 for (let [cmd, obj] of Object.entries(command.protected))
                 {
-                    embed.addField("!"+cmd, obj.desc);
+                    embed_protected.addField("!"+cmd, obj.desc);
                 }
 
-                mess.logedToAll(embed)
+                mess.logedMessage(embed_public)
+                .catch(logError);
+                mess.logedMessage(embed_protected)
                 .catch(logError);
             },
             desc: "Display this help."
@@ -119,28 +92,36 @@ const command =
             exec: (mess) =>
             {
                 let classes = command.private.fetch(mess);
-                let current_hour = new Date(Date.now()).getHours();
+                let time = new Date();
                 let embed = new Discord.MessageEmbed();
+                
+        		let next_cours = undefined;
 
-                if (classes === undefined)
-                {
-                    embed.setTitle("Auncun cours");
-                    embed.setColor(0x000000);
-                }
+        		try
+        		{
+        			for (let cours of classes)
+        			{
+        				let cours_time = new Date();
+        				cours_time.setHours(parseInt(cours.hours.split("-")[0].split("h")[0]));
+        				cours_time.setMinutes(parseInt(cours.hours.split("-")[0].split("h")[1]));
+
+        				if (cours_time >= time)
+        				{
+        					next_cours = cours;
+        					break;
+        				}
+        			}
+        		}
+        		catch(err){}
+
+
+        		if (next_cours === undefined)
+                        {
+                            embed.setTitle("Auncun cours");
+                            embed.setColor(0x000000);
+                        }
                 else
                 {
-                    let next_cours = classes[0];
-                    for (let cours of classes)
-                    {
-                        console.log(parseInt(cours.hours));
-                        console.log(current_hour);
-                        if (parseInt(cours.hours) > current_hour)
-                        {
-                            console.log("break");
-                            next_cours = cours;
-                            break;
-                        }
-                    }
                     embed.setTitle(next_cours.hours);
                     switch (next_cours.type)
                     {
@@ -161,7 +142,7 @@ const command =
                         embed.setColor(0x000000);
                     embed.setDescription(next_cours.topic + "\n" + next_cours.teachers[0] + "\n" + next_cours.type + ((next_cours.motif == "REPORTE") ? " REPORTE" : ""));
                 }
-                mess.logedToAll(embed)
+                mess.logedMessage(embed)
                 .catch(logError);
             },
             desc: "Get the next class."
@@ -175,11 +156,10 @@ const command =
                 
                 if (classes === undefined)
                 {
-                    console.log("undefined");
                     let embed = new Discord.MessageEmbed()
                     .setTitle("Auncun cours")
                     .setColor(0x000000);
-                    mess.logedToAll(embed)
+                    mess.logedMessage(embed)
                     .catch(logError);
                 }
                 else
@@ -207,7 +187,7 @@ const command =
                             embed.setColor(0x000000);
                         embed.setDescription(cours.topic + "\n" + cours.teachers[0] + "\n" + cours.type + ((cours.motif == "REPORTE") ? " REPORTE" : ""));
 
-                        mess.logedToAll(embed)
+                        mess.logedMessage(embed)
                         .catch(logError);
                     }
                 }
@@ -219,15 +199,10 @@ const command =
         { 
             exec: async (mess) =>
             {
-                let sector = db.fetchUserData(mess.author.id)[0];
-
-                let groups = db.listAllGroupFiltered(sector);
-
-                await command.private.mcq(mess, "What is your group ?", groups)
-                .then((index)=>
+                await command.private.register(mess)
+                .then((data)=>
                 {
-                    db.registreUser(mess.author.id, sector, groups[index]);
-                    mess.logedSend(`Successfully changed for group ${groups[index]}`);
+                    mess.logedMessage(`Successfully changed group for ${data[1]}, ${data[0]}`, true);
                 })
                 .catch(logError);
             },
@@ -244,20 +219,17 @@ const command =
                 let sectors = db.listAllSectors();
 
                 await command.private.mcq(mess, "What is your sector ?", sectors)
-                .then((index)=>
-                {
-                    return sectors[index];
-                })
                 .then(async (sector)=>
                 {
                     let groups = db.listAllGroupFiltered(sector);
 
                     await command.private.mcq(mess, "What is your group ?", groups)
-                    .then((index)=>
+                    .then((group)=>
                     {
-                        db.registreUser(mess.author.id, sector, groups[index]);
-                        resolve([groups[index], sector]);
+                        db.registreUser(mess.author.id, sector, group);
+                        resolve([group, sector]);
                     })
+                    .catch(reject);
                 })
                 .catch(reject);
             });
@@ -279,14 +251,14 @@ const command =
                     content += `\n${emoji[i]} ${data[i]}`;
                 }
 
-                message.logedSend(content)
+                message.logedMessage(content, true)
                 .then((m)=>
                 {
                     const collector = m.createReactionCollector(filter, {max:1});
 
                     collector.on('collect', (reac, user) =>
                     {
-                        resolve(emoji.indexOf(reac.emoji.name));
+                        resolve(data[emoji.indexOf(reac.emoji.name)]);
                     });
 
                     for (let i = 0; i < data.length; i++)
@@ -301,13 +273,14 @@ const command =
 
         fetch: (mess)=>
         {
-            let time = new Date(Date.now());
+            let time = new Date();
             time = time.getMonth()+1 + "-" + time.getDate();
             let user_data = db.fetchUserData(mess.author.id);
             let classes = [];
             for (let group of user_data[1])
             {
                 let cours = db.listAllClasses(user_data[0], group, time);
+                // tri par ordre chronologique, à mettre dans listAllClasses
                 if (cours !== undefined)
                 {
                     for (let sub_cours of cours)
@@ -329,6 +302,7 @@ const command =
                         }
                     }
                 }
+                // fin tri par ordre chronologique
             }
             return (classes.length) ? classes : undefined;
         }
@@ -344,22 +318,6 @@ const command =
 bot.on('ready', () => 
 {
     console.log(`Bot logged in as ${bot.user.tag} at ${new Date(Date.now())}.`);
-    /*bot.channels.cache.forEach(channel=>
-    {
-        if (channel.type == "text")
-        {
-            let embed = new Discord.MessageEmbed()
-            .setTitle("Hi bitches !")
-            .setColor(0xe200f2);
-            let message = new Discord.Message(bot, embed, channel);
-            message.logedToAll(embed)
-            .then((mess)=>
-            {
-                command.public.help.exec(mess);
-            })
-            .catch(logError);
-        }
-    });*/
 });
 
 bot.on('message', async (message) => {
@@ -379,7 +337,7 @@ bot.on('message', async (message) => {
                 await command.private['register'](message)
                 .then((data)=>
                 { 
-                    message.logedSend(`Successfully registered in ${data[1]}, ${data[0]}`);
+                    message.logedMessage(`Successfully registered in ${data[1]}, ${data[0]}`, true);
                 })
                 .catch(logError);
             }
@@ -387,7 +345,7 @@ bot.on('message', async (message) => {
         }
         else
         {
-            message.logedReply({content: `Unknow command : ${cmd}`, code:'js'})
+            message.logedMessage({content: `Unknow command : ${cmd}`, code:'js'})
             .catch(logError);
         }
     }
