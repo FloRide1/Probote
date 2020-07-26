@@ -18,7 +18,7 @@ function getDate(week,day){
     date = new Date(config.classes.begin_date);
     date = date.addWeeks(week-1);
     date = date.addDays(day);
-    return date.getMonth() + "-" + date.getDate()
+    return date.getMonth()+1 + "-" + date.getDate()
 }
 
 

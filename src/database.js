@@ -14,25 +14,6 @@ function StoreData(sectorName,data,week){
 
     for (let i = 0; i < data.length; i++) {
         let date = getDate(week,i);
-
-
-
-
-
-        //////////////////////////////////////////////////////////////
-        ///////////               NEED FIX                 /////////// 
-        //////////////////////////////////////////////////////////////
-        date=date.split("-");                              ///////////
-        date[0]=parseInt(date[0])+1;                       ///////////
-        date=date.join("-");                               ///////////
-        //////////////////////////////////////////////////////////////
-        ///////////               NEED FIX                 /////////// 
-        //////////////////////////////////////////////////////////////
-
-
-
-
-        
         data[i].forEach(element => {
             let groups = element.groups;
             let dayName = element.day%(config.classes.max_time/config.classes.delta_time)
@@ -136,6 +117,7 @@ function ParseData(data){
             let day = element.p;
             let delta = element.d;
             let groups = [];
+	    let type = "NO";
             classe.forEach(x => {
                 let i = x.G;
                 let index = config.classes.index;
@@ -184,7 +166,6 @@ function ParseData(data){
 
             classes_parse[parseInt(day/ratio,10)%7].push(classe_parse);
         });
-        
         listAbortedClasses.forEach(element => {
             var weekIndex = element.G
             let classe = element.listeContenus
