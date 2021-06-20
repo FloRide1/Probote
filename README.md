@@ -6,4 +6,4 @@
 ## Forked from :
 Litarvan/pronote-api
 
-Server side student bot for Toulon University 
+Server side student bot for Toulon University (isn't finished)
